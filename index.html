@@ -1,193 +1,193 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
-
-
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
-</body>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+      <ul id="menu">
+         <li><a href="#about">About Me</a></li>
+         <li><a href="#photos">My Photos</a></li>
+         <li><a href="#playlist">My Playlist</a></li>
+         <li><a href="#like">Like</a></li>
+         <li><a href="#qrcoder">QR code</a></li>
+         <li><a href="#spa">Q&A</a></li>
+         <li><a href="#contact">Contact Me</a></li>
+      </ul>
+      <section id="about" class="section">
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <h>about me</h>
+         <p id ="aboutMeP">
+            My name is Amit Sultan, I'm 25 years old born and raised in Israel.
+            <br>
+            I'm a third year ISE student, I spend my free time playing the guitar, gaming, and binge-watching TV shows.
+            <br>
+            My favorite interests to study are mostly AI related, DeepMind will be the perfect example!
+            <br>
+            their agent started from scratch and climbed up to the top of the leaderboard and surpass even the world champions.
+            <br>
+            This semester I'm taking the "Research Skills" without too much digging my assignment is to create a website
+            <br>
+            to allow data sharing, so I hope this course will give me the tools I need to make it happen!.
+         </p>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+      </section>
+      <section id="photos" class="section">
+         my photos
+         <div class="slideshow-container">
+            <link rel="stylesheet" type="text/css" href="slideStyle.css"/>
+            <div class="mySlides fade">
+               <div class="numbertext">1 / 5</div>
+               <img src="resources/pictures/pic1.jpg" style="width:100%">
+               <div class="text">Me & Dad</div>
+            </div>
+            <div class="mySlides fade">
+               <div class="numbertext">2 / 5</div>
+               <img src="resources/pictures/pic2.jpg" style="width:100%">
+               <div class="text">#StudentLife</div>
+            </div>
+            <div class="mySlides fade">
+               <div class="numbertext">3 / 5</div>
+               <img src="resources/pictures/pic3.jfif" style="width:100%">
+               <div class="text">Before saturday ride</div>
+            </div>
+            <div class="mySlides fade">
+               <div class="numbertext">4 / 5</div>
+               <img src="resources/pictures/pic4.jfif" style="width:100%">
+               <div class="text">Cute Doggo sleep</div>
+            </div>
+            <div class="mySlides fade">
+               <div class="numbertext">5 / 5</div>
+               <img src="resources/pictures/pic5.jfif" style="width:100%">
+               <div class="text">Cute Doggo smile</div>
+            </div>                                    
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div>
+         <br>
+         <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <script src="js/app.js"></script>
+         </div>
+      </section>
+      <section id="playlist" class="section">
+         <br/>
+         my playlist
+         <br/>
+         <br/>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLY4Z055L22k6n7hjyQwSW5EEKGKYUSAr3" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         <br/>
+      </section>
+      <section id="like" class="section">
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         give me a like
+         <br/>
+         <br/>
+         <br/>
+      </section>
+      <section id="qrcoder" class="section">
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         scan my code
+         <br/>
+         <br/>
+         <br/>
+      </section>
+      <section id="spa" class="section">
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         ans
+         <br/>
+         <br/>
+         <br/>
+      </section>
+      <section id="contact" class="section">
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         contact me
+         <br/>
+         <br/>
+         <br/>
+      </section>
+      <script type="text/javascript">
+         $(function(){
+         	$("#nav a").click(function(e){
+         		e.preventDefault();
+         		$('html,body').scrollTo(this.hash,this.hash); 
+         	});
+         });
+      </script>
+      <script type="text/javascript">
+         $(document).scroll(function() {
+         	$('#menu').toggle($(this).scrollTop()>1000)
+         });​
+      </script>
+   </body>
 </html>

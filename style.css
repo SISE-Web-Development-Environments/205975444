@@ -1,7 +1,81 @@
-#menu
-{
+body{
+	background-color: #333;
+}
+.test{
+	color: orange;
+}
+.section{
+	color: orange;
+
+}
+ul
+{  
+    z-index: 50;
+	display:inline;      
 	position: fixed;
 	width: 100%;
-	height: 35px;
-	background: white;
+	height: 80px;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 20px;
+    overflow: hidden;
+    border: 10px ridge #FF8C00;
+    background-color: #333;
+} 
+#menu li{
+	display: inline-block;
+    font-size: 18px;
+    width: 8em;
+    height: 2em;
+    color: orange;
+    border-left: 0.08em solid;
+    position: relative;
+    margin-top: 0.8em;
+    cursor: pointer;
 }
+
+#menu li::before,
+#menu li::after
+ {
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: inherit;
+    z-index: -1;
+}
+
+#menu li::before {
+    height: 80%;
+    top: 10%;
+    left: calc(-0.15em - 0.08em * 2);
+    filter: brightness(0.8);
+}
+
+#menu li::after {
+    height: 60%;
+    top: 20%;
+    left: calc(-0.15em * 2 - 0.08em * 3);
+    filter: brightness(0.6);
+}
+
+#menu li a {
+	color: orange;
+    position: relative;
+    height: 120%;
+    top: -10%;
+    box-sizing: border-box;
+    border: 0.08em solid;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+    transition: 0.3s;
+}
+
+#menu li:hover a {
+    transform: translateX(0.15em);
+}
+
