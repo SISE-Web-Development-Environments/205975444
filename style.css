@@ -1,101 +1,114 @@
-body{
-	background-color: #333;
+body {
+  background-color: #333;
 }
-.test{
-	color: orange;
-}
-.section{
-	color: orange;
 
+.test {
+  color: orange;
 }
-ul
-{  
-    z-index: 50;
-	display:inline;      
-	position: fixed;
-	width: 100%;
-	height: 80px;
-    list-style-type: none;
-    margin: 0;
-    padding-left: 20px;
-    overflow: hidden;
-    border: 10px ridge #FF8C00;
-    background-color: #333;
-} 
-#menu li{
-	display: inline-block;
-    font-size: 18px;
-    width: 8em;
-    height: 2em;
-    color: orange;
-    border-left: 0.08em solid;
-    position: relative;
-    margin-top: 0.8em;
-    cursor: pointer;
+
+.section {
+  color: orange;
+}
+
+ul {
+  z-index: 50;
+  display: inline;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 20px;
+  overflow: hidden;
+  border: 10px ridge #FF8C00;
+  background-color: #333;
+}
+
+#menu li {
+  display: inline-block;
+  font-size: 18px;
+  width: 8em;
+  height: 2em;
+  color: orange;
+  border-left: 0.08em solid;
+  position: relative;
+  margin-top: 0.8em;
+  cursor: pointer;
 }
 
 #menu li::before,
-#menu li::after
- {
-    content: '';
-    position: absolute;
-    width: inherit;
-    border-left: inherit;
-    z-index: -1;
+#menu li::after {
+  content: '';
+  position: absolute;
+  width: inherit;
+  border-left: inherit;
+  z-index: -1;
 }
 
 #menu li::before {
-    height: 80%;
-    top: 10%;
-    left: calc(-0.15em - 0.08em * 2);
-    filter: brightness(0.8);
+  height: 80%;
+  top: 10%;
+  left: calc(-0.15em - 0.08em * 2);
+  filter: brightness(0.8);
 }
 
 #menu li::after {
-    height: 60%;
-    top: 20%;
-    left: calc(-0.15em * 2 - 0.08em * 3);
-    filter: brightness(0.6);
+  height: 60%;
+  top: 20%;
+  left: calc(-0.15em * 2 - 0.08em * 3);
+  filter: brightness(0.6);
 }
 
 #menu li a {
-	color: orange;
-    position: relative;
-    height: 120%;
-    top: -10%;
-    box-sizing: border-box;
-    border: 0.08em solid;
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: sans-serif;
-    text-transform: capitalize;
-    transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
-    transition: 0.3s;
+  color: orange;
+  position: relative;
+  height: 120%;
+  top: -10%;
+  box-sizing: border-box;
+  border: 0.08em solid;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+  transition: 0.3s;
 }
 
 #menu li:hover a {
-    transform: translateX(0.15em);
+  transform: translateX(0.15em);
 }
 
-.ans{
-    font-size: 14px;
+.ans {
+  font-size: 14px;
 }
+
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-bottom: 8px; /* Bottom margin */
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-bottom: 8px;
+  /* Bottom margin */
   margin-top: 6px;
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+
 /* Style the submit button with a specific background color etc */
+
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
@@ -105,12 +118,16 @@ input[type=submit] {
   cursor: pointer;
 }
 
+
 /* When moving the mouse over the submit button, add a darker green color */
+
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
+
 /* Add a background color and some padding around the form */
+
 div.container {
   border-radius: 5px;
   width: 350px;
@@ -118,13 +135,20 @@ div.container {
   padding: 8px;
 }
 
-input.emoji{
-    background: transparent;
-    border:none;
+input.emoji {
+  background: transparent;
+  border: none;
+  transition-duration: 0.35s;
+}
+
+.emoji:hover {
+  transform: scale(1.8) translateZ(0);
+  transition-duration: 0.35s;
 }
 
 
 /* Buzz */
+
 @-webkit-keyframes hvr-buzz {
   50% {
     -webkit-transform: translateX(3px) rotate(2deg);
@@ -136,7 +160,9 @@ input.emoji{
   }
 }
 
-.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+.hvr-buzz:hover,
+.hvr-buzz:focus,
+.hvr-buzz:active {
   -webkit-animation-name: hvr-buzz;
   animation-duration: 0.15s;
   animation-timing-function: linear;
