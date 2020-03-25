@@ -36,6 +36,8 @@
          </p>
          <br/>
          <br/>
+                  <button class="hvr-buzz" style="height: 200px; width: 200px;"></button>
+
          <br/>
          <br/>
          <br/>
@@ -98,83 +100,72 @@
          <br/>
 <div class="fb-like" data-href="https://sise-web-development-environments.github.io/assignment1-amitsultan/" data-width="500" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
          <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
       </section>
       <section id="qrcoder" class="section">
          <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
          scan my code
+         <br/>
+         <img src="resources/pictures/QR.png" style="width: 10%; height: 10%;" />
          <br/>
          <br/>
          <br/>
       </section>
       <section id="spa" class="section">
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
          ans
          <br/>
          <br/>
+         <h>What is the diffrence between web 1.0/2.0/3.0?</h>
          <br/>
+         <p class ="ans">
+         	-Web 1.0: Is the first generation of web and was mainly about spreading and sharing information.
+         	<br/>
+         	&nbsp;&nbsp; Web 1.0 was mainly read-only web and had little to no interaction with the clients.
+         	<br/>
+         	<br/>
+         	-Web 2.0: Unlike the first generation the 2.0 web was a read-write web,giving the option 
+         	<br/>
+         	&nbsp;&nbsp;to exchange information with the client thus enable more complex networking such as
+         	<br/>
+         	&nbsp;&nbsp; social media such as facebook or myspace.
+         	<br/>
+         	<br/>
+         	-Web 3.0: Also known as the semantic web, web 3.0 unlike the previous versions uses 
+         	<br/>
+         	&nbsp;&nbsp; semantics such as interpeting of queries or preforming computations 
+         	<br/>
+         	&nbsp;&nbsp; to find the best products for you in shopping site (like Amazon recommendation).
+         </p>
       </section>
       <section id="contact" class="section">
          <br/>
+          contact me
          <br/>
          <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         <br/>
-         contact me
+         <div class="container">
+  <form action="mailto:amitsul@post.bgu.ac.il?subject=subject&body=body"  method="get" enctype="text/plain">
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Subject here..">
+
+    <label for="Body">Body</label>
+    <textarea type="text" id="body" name="body" placeholder="body here.." rows="4" cols="50"></textarea>
+
+        <div style="padding-bottom: 10px">
+         	<input type="button" class ="emoji" value="&#128532;" onclick="addToBody('&#128532')">
+         	<input type="button" class ="emoji" value="&#128530;" onclick="addToBody('&#128530')">
+         	<input type="button" class ="emoji" value="&#128529;" onclick="addToBody('&#128529')">
+         	<input type="button" class ="emoji" value="&#128513;" onclick="addToBody('&#128513')">
+         	<input type="button" class ="emoji" value="&#128525;" onclick="addToBody('&#128525')">
+         	<script>
+         		function addToBody(type){
+         			var body = document.getElementById("body");
+         			body.value += type;
+         		}
+         </script>
+        </div>     
+    <input type="submit" value="Submit">
+  </form>
+</div>
          <br/>
          <br/>
          <br/>
