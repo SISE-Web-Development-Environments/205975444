@@ -1,7 +1,7 @@
 Full name: Amit Sultan.
 Username: amitsul.
 ID: 205975444.
-Website: https://sise-web-development-environments.github.io/assignment1-amitsultan
+Website: https://sise-web-development-environments.github.io/205975444
 
 Hello! This website created by me about me :)
 The photos gallary switch photo every few seconds to make for a nice presention while reading.
