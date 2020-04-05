@@ -32,7 +32,13 @@ body {
   font-family: Tahoma, Geneva, sans-serif;
 }
 #playlistHeader{
-  width: 40%;
+  width: 50%;
+}
+#likeHeader{
+    background: linear-gradient(to bottom, #6d5a1f 0%, #cc9900 100%);
+}
+#scanCodeHeader{
+    background: linear-gradient(to bottom, #7e651a 0%, #cc9900 100%);
 }
 ul {
   z-index: 50;
