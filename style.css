@@ -1,5 +1,5 @@
 body {
-  background-color: #333;
+  background: linear-gradient(to bottom, #333 30%, #cc9900 100%);
 }
 
 .test {
@@ -7,9 +7,33 @@ body {
 }
 
 .section {
-  color: orange;
+  color: black;
+  font-size: 20px;
+    font-weight: bold;
 }
-
+#textBox{
+  width: 60%;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #333 0%, #cc9900 100%);
+  border-radius: 5px;
+  padding: 8px;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+.Header{
+  width: 60%;
+  margin: 0 auto;
+  font-size: 32px;
+  background: linear-gradient(to bottom, #333 0%, #cc9900 100%);
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+#playlistHeader{
+  width: 40%;
+}
 ul {
   z-index: 50;
   display: inline;
